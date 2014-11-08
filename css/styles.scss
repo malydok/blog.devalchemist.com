@@ -1,0 +1,72 @@
+---
+---
+
+@import "normalize";
+@import "bourbon/bourbon";
+
+
+$base: 20px;
+
+$font_primary: 'Alegreya Sans', sans-serif;
+$font_secondary: 'Abel', sans-serif;
+
+$primary: #81CCB5;
+$light: #f9f9f9;
+$dark: #444;
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+	font-size: $base;
+}
+body {
+	background: $light;
+	font-family: $font_primary;
+	font-weight: 300;
+	color: $dark;
+}
+
+
+h1, h2, h3 {
+	font-family: $font_secondary;
+}
+
+
+.wrap {
+	width: 90%;
+	margin: 0 auto;
+	padding: 0 2rem;
+}
+
+.header {
+	position: relative;
+	background-color: $primary;
+	color: $light;
+	padding: 2rem 0;
+
+	&:after {
+		display: block;
+		width: 100%;
+		height: 0.5rem;
+		content: '';
+		position: absolute;
+		top: 100%; left: 0;
+		background-color: lighten($primary, 28%);
+	}
+}
+.title {
+	margin: 0;
+	font-size: 2rem;
+}
+.subtitle {
+	margin: 0;
+	font-family: $font_primary;
+	font-weight: 300;
+	font-size: 1rem;
+}
