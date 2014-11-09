@@ -2,7 +2,7 @@
 ---
 
 @import "normalize";
-@import "bourbon/bourbon";
+// @import "bourbon/bourbon";
 
 
 $base: 20px;
@@ -10,9 +10,9 @@ $base: 20px;
 $font_primary: 'Alegreya Sans', sans-serif;
 $font_secondary: 'Abel', sans-serif;
 
-$primary: #81CCB5;
-$light: #f9f9f9;
-$dark: #444;
+$primary: #F37272;
+$light: #F7F7F7;
+$dark: #584E4A;
 
 html {
   box-sizing: border-box;
@@ -26,10 +26,10 @@ body {
 	font-size: $base;
 }
 body {
-	background: $light;
 	font-family: $font_primary;
 	font-weight: 300;
-	color: $dark;
+	background-color: $dark;
+	color: $light;
 }
 
 
@@ -46,19 +46,12 @@ h1, h2, h3 {
 
 .header {
 	position: relative;
-	background-color: $primary;
-	color: $light;
-	padding: 2rem 0;
-
-	&:after {
-		display: block;
-		width: 100%;
-		height: 0.5rem;
-		content: '';
-		position: absolute;
-		top: 100%; left: 0;
-		background-color: lighten($primary, 28%);
-	}
+	
+}
+.header_title {
+	display: inline-block;
+	padding: 2rem 0 2.5rem;
+	border-top: .5rem solid $primary;
 }
 .title {
 	margin: 0;
@@ -69,4 +62,5 @@ h1, h2, h3 {
 	font-family: $font_primary;
 	font-weight: 300;
 	font-size: 1rem;
+	color: lighten($dark, 40%);
 }
