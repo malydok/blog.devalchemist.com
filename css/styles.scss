@@ -1,10 +1,16 @@
 ---
 ---
 
+// 
+// Imports
+// ------------------------------
 @import "normalize";
-// @import "bourbon/bourbon";
+@import "animate";
 
 
+// 
+// Variables
+// ------------------------------
 $base: 20px;
 
 $font_primary: 'Alegreya Sans', sans-serif;
@@ -13,7 +19,12 @@ $font_secondary: 'Abel', sans-serif;
 $primary: #F37272;
 $light: #F7F7F7;
 $dark: #584E4A;
+$dark_lighter: lighten($dark, 40%);
 
+
+// 
+// Default overrides
+// ------------------------------
 html {
   box-sizing: border-box;
 }
@@ -25,29 +36,80 @@ html,
 body {
 	font-size: $base;
 }
+
+
+// 
+// Base styles
+// ------------------------------
 body {
 	font-family: $font_primary;
 	font-weight: 300;
 	background-color: $dark;
 	color: $light;
+	overflow-y: scroll;
+
+	&.inverse {
+		background-color: $light;
+		color: $dark;
+	}
 }
 
+img {
+	max-width: 100%;
+}
 
 h1, h2, h3 {
 	font-family: $font_secondary;
+	text-rendering: optimizeLegibility;
+}
+h1 {
+	font-size: 2rem;
+}
+h2 {
+	font-size: 1.4rem;
+}
+h3 {
+	font-size: 1.2rem;
+}
+
+a {
+	color: $primary;
+	text-decoration: none;
+	
+	&:hover,
+	&:focus {
+
+	}
 }
 
 
-.wrap {
+// 
+// Layout
+// ------------------------------
+.wrapper {
 	width: 90%;
 	margin: 0 auto;
 	padding: 0 2rem;
 }
 
+
+// 
+// Reusable elements
+// ------------------------------
+
+
+
+
+// 
+// Sections & elements
+// ------------------------------
+
+// HEADER
 .header {
 	position: relative;
-	
 }
+
+// HEADER TITLE
 .header_title {
 	display: inline-block;
 	padding: 2rem 0 2.5rem;
@@ -55,12 +117,112 @@ h1, h2, h3 {
 }
 .title {
 	margin: 0;
-	font-size: 2rem;
+	font-size: 1.6rem;
 }
 .subtitle {
 	margin: 0;
 	font-family: $font_primary;
 	font-weight: 300;
 	font-size: 1rem;
-	color: lighten($dark, 40%);
+	color: $dark_lighter;
+}
+
+// HEADER NAV
+.nav {
+	display: inline-block;
+	float: right;
+	padding-top: 2.5rem;
+	list-style-type: none;
+}
+.nav_item {
+	position: relative;
+	display: block;
+	width: 50px;
+	height: 50px;
+	padding: .5rem 1rem;
+	border-radius: 25px;
+	font-weight: 500;
+	line-height: 1;
+	border: .3rem solid $light;
+	border-top: .3rem solid $primary;
+
+	span {
+		display: none;
+		opacity: 0;
+		transition: opacity .2s .2s;
+	}
+	&:before {
+		position: absolute;
+		top: 50%; left: 50%;
+		transform: translate(-50%, -50%);
+		content: attr(data-short);
+		display: block;
+		text-align: center;
+		font-family: $font_primary;
+		color: $light;
+		transition: opacity .2s linear;
+	}
+	&:hover,
+	&:focus {
+		width: auto;
+
+		span {
+			display: inline-block;
+			opacity: 1;
+		}
+		&:before {
+			opacity: 0;
+		}
+	}
+	&:active {
+		top: 1px;
+	}
+
+	.inverse & {
+		border: .3rem solid $dark_lighter;
+		border-top: .3rem solid $primary;
+
+		&:before {
+			color: $dark_lighter;
+		}
+	}
+}
+
+
+// MAIN
+.main {
+	margin-bottom: 8rem;
+}
+.article_list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	@extend .animated;
+	@extend .fadeInRight;
+}
+.article_list_item {
+	display: inline-block;
+	color: $light;
+
+	h1 {
+		margin-bottom: 0;
+	}
+	date {
+		color: $dark_lighter;
+	}
+	&.animate_out {
+		@extend .animated;
+		@extend .fadeOutRight;
+	}
+}
+
+// ARTICLE
+.article {
+	max-width: 30rem;
+	@extend .animated;
+	@extend .fadeInLeft;
+
+	&.animate_out {
+		@extend .fadeOutLeft;
+	}
 }
