@@ -71,6 +71,9 @@ h2 {
 h3 {
 	font-size: 1.2rem;
 }
+h1, h2, h3, h4, h5, p, blockquote, pre, img {
+	margin: 1rem 0;
+}
 
 a {
 	color: $primary;
@@ -96,7 +99,23 @@ a {
 // 
 // Reusable elements
 // ------------------------------
+.home_link {
+	display: inline-block;
+	margin: 2rem 0;
 
+	.arrow {
+		position: relative;
+		right: 0;
+		transition: right .3s ease-out;
+	}
+	&:hover,
+	&:focus {
+		.arrow {
+			transition: right .3s ease-in;
+			right: 100%;
+		}
+	}
+}
 
 
 
@@ -118,6 +137,10 @@ a {
 .title {
 	margin: 0;
 	font-size: 1.6rem;
+
+	a {
+		color: inherit;
+	}
 }
 .subtitle {
 	margin: 0;
@@ -197,22 +220,31 @@ a {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	@extend .animated;
-	@extend .fadeInRight;
 }
 .article_list_item {
+	position: relative;
+	top: .5rem;
+	left: 0;
 	display: inline-block;
 	color: $light;
+	transition: left .3s ease-out;
+	opacity: 0;
+
+	&.animate_out {
+		@extend .animated;
+		@extend .fadeOutRight;
+	}
+	&:hover,
+	&:focus {
+		transition: left .3s ease-in;
+		left: 1.5rem;
+	}
 
 	h1 {
 		margin-bottom: 0;
 	}
 	date {
 		color: $dark_lighter;
-	}
-	&.animate_out {
-		@extend .animated;
-		@extend .fadeOutRight;
 	}
 }
 
@@ -224,5 +256,14 @@ a {
 
 	&.animate_out {
 		@extend .fadeOutLeft;
+	}
+
+	h1 {
+		margin-bottom: .2rem;
+	}
+	date {
+		display: block;
+		color: $dark_lighter;
+		margin-bottom: 2rem;
 	}
 }

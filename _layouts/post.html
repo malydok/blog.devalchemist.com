@@ -1,25 +1,16 @@
-{% include header.html %}
+{% include header.html param="class='inverse'" %}
 
-<body class="inverse">
 
-	<div class="wrapper">
-		<header class="header">
-			<div class="header_title">
-				<h1 class="title">Front-end developer&#8217;s musings</h1>
-				<h2 class="subtitle">by Marek Pietrzak</h2>
-			</div>
-			<!-- <nav class="nav">
-				<li><a href="/about.html" class="nav_item" data-short="i"><span>About</span></a></li>
-			</nav> -->
-		</header>
+	<main id="main" class="main">
+		<article class="article">
+			<h1>{{ page.title }}</h1>
+			<date>{{ page.date | date_to_long_string }}</date>
 
-		<main id="main" class="main">
-			<article class="article">
+			{{ content }}
 
-				{{ content }}
+			<a href="/" class="home_link"><span class="arrow">&larr;</span> Back to musings</a>
+		</article>
+	</main>
 
-			</article>
-		</main>
-	</div>
 
 {% include footer.html %}
