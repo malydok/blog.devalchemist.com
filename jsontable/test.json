@@ -1,0 +1,18 @@
+{
+    "success": "1",
+    "result": [
+        {
+            "title": "Plakatowanie",
+            "type": "action",
+            "icon_class": "flaticon-art3",
+            "price": "450"
+        },
+        {
+            "title": "Dystrybucja",
+            "type": "action",
+            "icon_class": "flaticon-delivery18",
+            "price": "112"
+        }
+    ],
+    "message": "Jakiś komunikat"
+}
