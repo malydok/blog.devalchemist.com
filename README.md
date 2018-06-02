@@ -1,4 +1,4 @@
-malydok.github.io
-=================
+blog.devalchemist.com
+=====================
 
-Just my personal website.
+My personal blog.
