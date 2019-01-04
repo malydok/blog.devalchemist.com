@@ -9,8 +9,8 @@
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---2014-11-15-ie-selector-limit": [
-      "path---2014-11-15-ie-selector-limit-5dc39260ad383edf50b2.js",
-      "path---2014-11-15-ie-selector-limit-5dc39260ad383edf50b2.js.map"
+      "path---2014-11-15-ie-selector-limit-910f54cb11412ae280fd.js",
+      "path---2014-11-15-ie-selector-limit-910f54cb11412ae280fd.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
@@ -25,8 +25,8 @@
       "component---src-layouts-index-js-1f12bb76f6db7e0f80cc.js.map"
     ],
     "path---index": [
-      "path---index-20fbf186a93e2f6330ae.js",
-      "path---index-20fbf186a93e2f6330ae.js.map"
+      "path---index-04f88bd0485e2150b383.js",
+      "path---index-04f88bd0485e2150b383.js.map"
     ],
     "commons": [
       "commons-1c470a546879368fe84f.js",
@@ -37,10 +37,14 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-feaf48d1393bf6a67da9.js",
+      "app-206a9f3a94c5461a6e4a.js",
       "build-js-styles.css",
-      "app-feaf48d1393bf6a67da9.js.map",
+      "app-206a9f3a94c5461a6e4a.js.map",
       "build-js-styles.css.map"
+    ],
+    "path---2019-01-04-priority-queue": [
+      "path---2019-01-04-priority-queue-ad4557f093f2403bac8e.js",
+      "path---2019-01-04-priority-queue-ad4557f093f2403bac8e.js.map"
     ]
   }
 }
