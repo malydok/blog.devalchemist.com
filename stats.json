@@ -1,36 +1,40 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-726af15aefd6a681934d.js",
-      "component---src-pages-index-js-726af15aefd6a681934d.js.map"
+      "component---src-pages-index-js-ffedb993616531e1bfb2.js",
+      "component---src-pages-index-js-ffedb993616531e1bfb2.js.map"
     ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---2014-11-15-ie-selector-limit": [
-      "path---2014-11-15-ie-selector-limit-e65005066242e6ac245c.js",
-      "path---2014-11-15-ie-selector-limit-e65005066242e6ac245c.js.map"
+      "path---2014-11-15-ie-selector-limit-05434392ca720634a7e7.js",
+      "path---2014-11-15-ie-selector-limit-05434392ca720634a7e7.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-6870e251c16cce6e2025.js",
-      "component---src-templates-blog-post-js-6870e251c16cce6e2025.js.map"
+      "component---src-templates-blog-post-js-a0d79cdf5bdfccccc933.js",
+      "component---src-templates-blog-post-js-a0d79cdf5bdfccccc933.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-cd7da6ac80cd26dd12d6.js",
-      "component---src-layouts-index-js-cd7da6ac80cd26dd12d6.js.map"
+      "component---src-layouts-index-js-1b0e3ccf1f046fae0d6a.js",
+      "component---src-layouts-index-js-1b0e3ccf1f046fae0d6a.js.map"
     ],
     "path---index": [
-      "path---index-4c47f8b909a2f8c3022b.js",
-      "path---index-4c47f8b909a2f8c3022b.js.map"
+      "path---index-7a85dfbe3a97e6c14b24.js",
+      "path---index-7a85dfbe3a97e6c14b24.js.map"
     ],
     "path---2019-05-03-jak-twoj-mozg-powstrzymuje-cie-przed-rozwojem": [
-      "path---2019-05-03-jak-twoj-mozg-powstrzymuje-cie-przed-rozwojem-12dec70aafa0ef9c3250.js",
-      "path---2019-05-03-jak-twoj-mozg-powstrzymuje-cie-przed-rozwojem-12dec70aafa0ef9c3250.js.map"
+      "path---2019-05-03-jak-twoj-mozg-powstrzymuje-cie-przed-rozwojem-611ed6e92e45973feb36.js",
+      "path---2019-05-03-jak-twoj-mozg-powstrzymuje-cie-przed-rozwojem-611ed6e92e45973feb36.js.map"
+    ],
+    "path---2019-05-06-zmienne-i-referencje": [
+      "path---2019-05-06-zmienne-i-referencje-62074a3563f032e56567.js",
+      "path---2019-05-06-zmienne-i-referencje-62074a3563f032e56567.js.map"
     ],
     "commons": [
       "commons-1c470a546879368fe84f.js",
@@ -41,9 +45,9 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-01a87f06ac1f0e8832d2.js",
+      "app-d1e06f2cbd5a8861032f.js",
       "build-js-styles.css",
-      "app-01a87f06ac1f0e8832d2.js.map",
+      "app-d1e06f2cbd5a8861032f.js.map",
       "build-js-styles.css.map"
     ],
     "path---2019-01-04-priority-queue": [
