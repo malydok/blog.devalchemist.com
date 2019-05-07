@@ -1,0 +1,97 @@
+@keyframes hornJump {
+  0%,
+  6%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+  20% {
+    transform: translateY(-6px) rotate(0);
+  }
+  40% {
+    transform: translateY(2px) rotate(5deg);
+  }
+  60% {
+    transform: translateY(0) rotate(-4deg);
+  }
+  80% {
+    transform: translateY(0) rotate(3deg);
+  }
+}
+@keyframes letterJump {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(4px);
+  }
+}
+
+.site-name {
+  line-height: 1;
+}
+.home-link {
+  display: block;
+  color: var(--lightGray);
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+
+    & .site-name__horns {
+      animation: hornJump 0.8s;
+    }
+    & .site-name__letter {
+      animation: letterJump 0.5s;
+    }
+  }
+}
+.site-name__image {
+  position: relative;
+  float: left;
+  margin-right: 2rem;
+}
+.site-name__horns {
+  fill: var(--red);
+  transform-origin: center;
+}
+.site-name__letter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: var(--lightGray);
+
+  &.dark {
+    fill: var(--darkBrown);
+  }
+}
+.site-name__text {
+  display: inline-block;
+  font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua",
+    Georgia, serif;
+  margin-top: 0.6em;
+  margin-bottom: 0.05em;
+  font-size: 2rem;
+
+  @media (--small) {
+    margin-top: 0.35em;
+    font-size: 2.2rem;
+  }
+  @media (--medium) {
+    margin-top: 0.23em;
+  }
+}
+.site-description {
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: var(--lighterGray);
+  transition: opacity 0.2s;
+  font-size: 0.8rem;
+
+  @media (--small) {
+    font-size: 0.875rem;
+  }
+}

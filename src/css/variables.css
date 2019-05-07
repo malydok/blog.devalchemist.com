@@ -1,0 +1,13 @@
+@custom-media --small (min-width: 480px);
+@custom-media --medium (min-width: 768px);
+@custom-media --large (min-width: 1280px);
+
+:root {
+  --codeBlockBackground: #27221cf0;
+  --darkBrown: #27221c;
+  --lightBrown: #27221c60;
+  --lighterBrown: #27221c20;
+  --lightGray: #e6e6e0;
+  --lighterGray: #e6e6e080;
+  --red: #a03030;
+}
