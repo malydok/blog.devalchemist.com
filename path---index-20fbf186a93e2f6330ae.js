@@ -1,2 +1,0 @@
-webpackJsonp([0x81b8806e4260],{375:function(e,t){e.exports={data:{site:{siteMetadata:{title:"Devilish Alchemist's Blog"}},allMarkdownRemark:{edges:[{node:{excerpt:"If you’ve ever included too many libraries into your CSS build you might have experienced the pure awesomeness of not knowing why your…",fields:{slug:"/2014-11-15-ie-selector-limit/"},frontmatter:{date:"15 November, 2014",title:"Remember about the count limit of CSS selectors in IE"}}}]}},pathContext:{}}}});
-//# sourceMappingURL=path---index-20fbf186a93e2f6330ae.js.map
