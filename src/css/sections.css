@@ -51,6 +51,9 @@
   @media (--medium) {
     padding: 4rem 2rem;
   }
+  @media (forced-colors: active) {
+    padding: 3rem 0;
+  }
 }
 
 .article__title {
