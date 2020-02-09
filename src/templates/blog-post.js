@@ -23,7 +23,9 @@ class BlogPostTemplate extends React.Component {
         <article className="article">
           <header className="article__header">
             <Link to="/" className="article__back article-link">
-              ← <span className="article__back-text">Back to articles</span>
+              <span class="article__back-inner">
+                ← <span className="article__back-text">Back to articles</span>
+              </span>
             </Link>
             <h1 className="article__title">{post.frontmatter.title}</h1>
             <small className="article__date">{post.frontmatter.date}</small>
@@ -37,7 +39,9 @@ class BlogPostTemplate extends React.Component {
               to="/"
               className="article__back article__back--bottom article-link"
             >
-              ← <span className="article__back-text">Back to articles</span>
+              <span class="article__back-inner">
+                ← <span className="article__back-text">Back to articles</span>
+              </span>
             </Link>
           </footer>
         </article>

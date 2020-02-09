@@ -4,11 +4,23 @@
 
 :root {
   --codeBlockBackground: #27221cf0;
-  --darkBrown: #27221c;
-  --lightBrown: #27221c60;
-  --lighterBrown: #27221c20;
-  --gray: #dfdfd9;
-  --lightGray: #e6e6e0;
-  --lighterGray: #e6e6e099;
-  --red: #a03030;
+  --outsideBackground: #27221c;
+  --markedText: #27221c20;
+  --blockquoteBackground: #dfdfd9;
+  --outsideText: #e6e6e0;
+  --outsideLightText: #e6e6e099;
+  --accent: #a03030;
+  --accentText: #a03030;
+  --contentText: #27221c;
+  --contentBackground: #e6e6e0;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --markedText: #3f3930;
+    --blockquoteBackground: #363129;
+    --accentText: #f86060;
+    --contentText: #e6e6e0;
+    --contentBackground: #2e2922;
+  }
 }

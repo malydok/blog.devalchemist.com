@@ -31,17 +31,18 @@
   position: relative;
   margin: 1rem 0;
   padding: 3rem 1rem;
-  border-top: 5px solid var(--red);
-  background-color: var(--lightGray);
+  border-top: 5px solid var(--accent);
+  background-color: var(--contentBackground);
 
   &::before {
     content: "fin";
     position: absolute;
+    z-index: 2;
     bottom: 0;
     right: 0%;
     font-size: 3.5rem;
     line-height: 0.8;
-    color: var(--darkBrown);
+    color: var(--contentText);
     opacity: 0.2;
     font-family: Palatino, "Palatino Linotype", "Palatino LT STD",
       "Book Antiqua", Georgia, serif;
@@ -64,7 +65,6 @@
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: var(--darkBrown);
   opacity: 0.7;
 }
 .article__content {
@@ -75,7 +75,7 @@
   & h3,
   & h4 {
     margin: 2rem 0 1.2rem;
-    border-bottom: 1px solid var(--lighterBrown);
+    border-bottom: 1px solid var(--markedText);
   }
   & h2 {
     font-size: 1.6rem;
@@ -100,15 +100,15 @@
 
 .articles-list {
   margin: 1rem 0;
-  border-top: 5px solid var(--red);
-  background-color: var(--lightGray);
+  border-top: 5px solid var(--accent);
+  background-color: var(--contentBackground);
 }
 .article-link {
   position: relative;
   display: block;
   padding: 1rem;
-  border-bottom: 1px solid var(--lighterBrown);
-  color: var(--darkBrown);
+  border-bottom: 1px solid var(--markedText);
+  color: var(--contentText);
 
   &::before {
     content: "";
@@ -117,7 +117,7 @@
     bottom: -1px;
     left: 0;
     right: 0;
-    background-color: var(--lighterBrown);
+    background-color: var(--markedText);
     opacity: 0;
     transform: scaleX(0.6);
     transition: opacity 0.3s, transform 0.4s cubic-bezier(0, 1, 0.5, 1);
@@ -134,7 +134,7 @@
     }
   }
   &:active {
-    color: var(--red);
+    color: var(--accent);
   }
 
   @media (--medium) {
@@ -171,13 +171,16 @@
   bottom: 0;
   padding-bottom: 0.9rem;
 }
+.article__back-inner {
+  position: relative;
+  z-index: 1;
+}
 .article__back-text {
   display: inline-block;
   margin-left: 0.5rem;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--darkBrown);
   opacity: 0;
   transform: translateX(1rem);
   transition: opacity 0.3s, transform 0.4s cubic-bezier(0, 1, 0.5, 1);
@@ -185,9 +188,9 @@
 
 .site-footer {
   font-size: 1rem;
-  color: var(--lighterGray);
+  color: var(--outsideLightText);
 
   & a {
-    color: var(--lightGray);
+    color: var(--outsideText);
   }
 }

@@ -35,7 +35,7 @@
 }
 .home-link {
   display: block;
-  color: var(--lightGray);
+  color: var(--outsideText);
 
   &:hover,
   &:focus {
@@ -55,17 +55,17 @@
   margin-right: 2rem;
 }
 .site-name__horns {
-  fill: var(--red);
+  fill: var(--accent);
   transform-origin: center;
 }
 .site-name__letter {
   position: absolute;
   top: 0;
   left: 0;
-  fill: var(--lightGray);
+  fill: var(--outsideText);
 
   &.dark {
-    fill: var(--darkBrown);
+    fill: var(--outsideBackground);
   }
 }
 .site-name__text {
@@ -87,7 +87,7 @@
 .site-description {
   text-transform: uppercase;
   letter-spacing: 0.4em;
-  color: var(--lighterGray);
+  color: var(--outsideLightText);
   transition: opacity 0.2s;
   font-size: 0.8rem;
 
