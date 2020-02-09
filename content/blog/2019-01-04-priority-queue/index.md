@@ -1,5 +1,5 @@
 ---
-title: Easy JavaScript excercise - priority queue
+title: Easy JavaScript exercise - priority queue
 date: "2019-01-04"
 description: ""
 ---
