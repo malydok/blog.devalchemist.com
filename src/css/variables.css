@@ -17,10 +17,10 @@
 
 @media screen and (prefers-color-scheme: dark) {
   :root {
-    --markedText: #3f3930;
+    --markedText: #24201a;
     --blockquoteBackground: #363129;
     --accentText: #f86060;
     --contentText: #e6e6e0;
-    --contentBackground: #2e2922;
+    --contentBackground: #322d28;
   }
 }
